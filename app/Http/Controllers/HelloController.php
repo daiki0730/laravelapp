@@ -8,28 +8,9 @@ use Illuminate\Http\Response;
 
 class HelloController extends Controller {
 
-  public function index(Request $request,Response $response) {
+  public function index() {
 
-$html = <<<EOF
-<html>
-<head>
-<title>Hello/Index</title>
-<style>
-body {font-size:16pt; color: #999;}
-h1 { font-size:100pt; text-align:right; color:#eee; margin:-40px 0 -50px 0px; }
-</style>
-</head>
-<body>
-  <h1>hello</h1>
-  <h3>Request</h3>
-  <pre>{$request}</pre>
-  <h3>Response</h3>
-  <pre>{$response}</pre>
-</body>
-</html>
-EOF;
+    return view('hello.index');
 
-    $response->setContent($html);
-    return $response;
   }
 }
