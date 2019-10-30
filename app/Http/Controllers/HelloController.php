@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 global $head, $style, $body, $end;
-$head = '<html><head>'
+$head = '<html><head>';
 $style = <<<EOF
 <style>
 body {font-size:16pt; color: #999;}
@@ -29,7 +29,7 @@ class HelloController extends Controller {
     $html = $head . tag('title','Hello/Index') . $style . $body . tag('h1','Index')
       . tag('p','this is Index page')
       . '<a href="/hello/other">go to other page</a>'
-      . $end
+      . $end;
 
     return $html;
   }
@@ -40,10 +40,7 @@ class HelloController extends Controller {
 
     $html = $head . tag('title','Hello/Other') . $style . $body
       . tag('h1','Other') . tag('p','this is Other page')
-      . $end
+      . $end;
     return $html;
   }
-
-
-
-
+}
