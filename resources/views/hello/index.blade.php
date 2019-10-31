@@ -13,7 +13,7 @@
   <p>{{ $msg }}</p>
 
   <form method="POST" action="/hello">
-    {{ csrf_field }}
+    {{ csrf_field() }}
     <input type="text" name="msg">
     <input type="submit">
   </form>
