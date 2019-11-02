@@ -10,7 +10,10 @@
 
 <body>
   <h1>Blade/Index</h1>
-  <p>{{ $msg }}</p>
+  @if ($msg != '')
+  <p>こんにちは、{{ $msg }}さん！</p>
+  @else
+  <p>なにか書いてください</p>
 
   <form method="POST" action="/hello">
     {{ csrf_field() }}
