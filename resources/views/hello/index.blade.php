@@ -14,6 +14,7 @@
   <p>こんにちは、{{ $msg }}さん！</p>
   @else
   <p>なにか書いてください</p>
+  @endif
 
   <form method="POST" action="/hello">
     {{ csrf_field() }}
