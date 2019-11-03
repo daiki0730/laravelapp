@@ -12,6 +12,7 @@
   </style>
 </head>
 <body>
+  <h1>@yield('title')</h1>
 
 </body>
 </html>
