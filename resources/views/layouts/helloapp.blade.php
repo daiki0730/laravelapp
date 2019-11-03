@@ -13,6 +13,7 @@
 </head>
 <body>
   <h1>@yield('title')</h1>
-
+  @section('menubar')
+  <h2 class="menutitle">※メニュー</h2>
 </body>
 </html>
