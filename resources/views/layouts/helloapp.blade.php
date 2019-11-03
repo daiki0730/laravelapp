@@ -18,6 +18,10 @@
   <ul>
     <li>@show</li>
   </ul>
+  <hr size="1">
+  <div class="content">
+  @yield('content')
+  </div>
 
 </body>
 </html>
