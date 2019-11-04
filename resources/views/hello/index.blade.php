@@ -6,3 +6,11 @@
   @parent
   インデックスページ
 @endsection
+
+@section('content')
+  <p>ここが本文のコンテンツです</p>
+@endsection
+
+@section('footer')
+copyright 2019 daki
+@endsection
