@@ -20,6 +20,6 @@
 }
 </style>
 <div class="message">
-  <p></p>
-  <p></p>
+  <p class="msg_title">{{$msg_title}}</p>
+  <p class="msg_content">{{$msg_content}}</p>
 </div>div
