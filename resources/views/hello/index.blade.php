@@ -11,8 +11,14 @@
   <p>ここが本文のコンテンツです</p>
 
   @component('components.message')
+  @slot('msg_title')
+  CAUTION!
+  @endslot
 
-  @emdcomponent
+  @slot('msg_content')
+  これはメッセージの表示です
+  @endslot
+  @endcomponent
 @endsection
 
 @section('footer')
