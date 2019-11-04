@@ -1,5 +1,6 @@
 @extends('layouts.helloapp')
 
+@section ('title', 'Index')
 
 <html>
 <head>
