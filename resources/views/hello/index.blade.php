@@ -1,5 +1,7 @@
-<html>
+@extends('layouts.helloapp')
 
+
+<html>
 <head>
   <title>Hello/Index</title>
   <style>
