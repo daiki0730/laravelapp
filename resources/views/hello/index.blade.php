@@ -9,6 +9,10 @@
 
 @section('content')
   <p>ここが本文のコンテンツです</p>
+
+  @component('components.message')
+
+  @emdcomponent
 @endsection
 
 @section('footer')
