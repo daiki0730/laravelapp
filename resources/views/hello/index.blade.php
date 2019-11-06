@@ -12,7 +12,6 @@
   <ul>
   @each('components.item'.$data.'item')
   </ul>
-
 @endsection
 
 @section('footer')
